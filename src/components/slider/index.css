@@ -1,0 +1,74 @@
+@import '../../index.css';
+.productVariantslider {
+  padding-bottom: 10px;
+}
+
+.productVariantslider_input {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #5DD37C 0%, #FFE91F 50%, #D35D5D 100%);
+  position: relative;
+  margin: 10px 0;
+}
+.productVariantslider_input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 11px;
+  height: 30px;
+  background: url("https://plixlifefc-media.farziengineer.co/hosted/Group_35103-13a1468a14ed.svg") no-repeat center center;
+  background-size: contain;
+  cursor: pointer;
+  margin-top: -7.5px;
+  box-shadow: none;
+}
+
+.productVariantslider_input::-moz-range-thumb {
+  width: 11px;
+  height: 30px;
+  background: url("https://plixlifefc-media.farziengineer.co/hosted/Group_35103-13a1468a14ed.svg") no-repeat center center;
+  background-size: contain;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.productVariantslider_input::-ms-thumb {
+  width: 11px;
+  height: 30px;
+  background: url("https://plixlifefc-media.farziengineer.co/hosted/Group_35103-13a1468a14ed.svg") no-repeat center center;
+  background-size: contain;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.productVariantslider_labels {
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+  text-align: center;
+  font-family: "CocoSharp XL";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: var(--medium-screen)) {
+  .productVariantslider_labels {
+    font-size: 11px;
+    margin-top: 0.2rem;
+  }
+  .productVariantslider {
+    padding-bottom: 0;
+  }
+  .productVariantslider_input::-webkit-slider-thumb {
+    width: 10px;
+    height: 23px;
+  }
+  .productVariantslider_input {
+    height: 7px;
+  }
+}
